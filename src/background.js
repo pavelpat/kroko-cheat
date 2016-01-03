@@ -29,7 +29,7 @@ chrome.webRequest.onCompleted.addListener(function(details) {
     xhr.send(null);
 
     var words = parseWords(xhr.responseText).map(toWord).filter(Boolean);
-    if (!words) return;
+    if (!words.length) return;
 
     chrome.tabs.query({active: true}, function(tabs) {
         if (!tabs) return;
