@@ -2,3 +2,6 @@
 
 ## Requirements
 - Firefox 45+
+
+## Build
+cd src; zip -r ../kroko-cheat.xpi *; cd ..
