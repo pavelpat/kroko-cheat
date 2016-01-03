@@ -1,0 +1,22 @@
+{
+
+  "description": "Kroko-Cheat",
+  "manifest_version": 2,
+  "name": "Kroko-Cheat",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "kroko-cheat@mozilla.org"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
